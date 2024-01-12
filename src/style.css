@@ -7,106 +7,135 @@
 }
 
 :root {
-    --cor-branco:#ffffff; 
-    --cor-cinza: #333333; 
-    --cor-preto: #000000; 
-    --cor-prata: #c0c0c0; 
-    --cor-azul:  #2335D1;
- 
+  --cor-branco:#f2f2f2; 
+  --cor-cinza: #737373; 
+  --cor-preto: #151515; 
+  --cor-prata: #a5a5a5; 
+  --cor-cinzaescuro: #424242;
+  --cor-dourada: #c0a16b;
   }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 .menu {
-    background-color: transparent; /* Fundo transparente */
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  background-color: transparent; 
+  padding: 20px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  background-color: #15151579;
 }
 
 .menu-itens {
-    list-style: none;
-    text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 .menu-itens li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 .menu-itens a {
-    text-decoration: none;
-    color: var(--cor-azul); 
-    font-weight: bold;
-    padding: 10px;
-    border: 2px solid transparent; 
-    border-radius: 5px; 
-    transition: border-color 0.5s ease, color 0.5s ease; 
+  text-decoration: none;
+  color: var(--cor-dourada); 
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid transparent; 
+  border-radius: 5px; 
+  transition: border-color 0.5s ease, color 0.5s ease; 
 }
 
 .menu-itens a:hover {
-    border-color: var(--cor-azul); 
-    color: #34495e; 
+  border-color: var(--cor-branco); 
+  color: var(--cor-dourada); 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 #home{
-    width: 100vw;
-    height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(51,51,51,1) 100%);
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, var(--cor-preto) 50%, var(--cor-prata) 100%);
 }
 
 .img-home {
-    display: flex;
-    height: 100%; 
-    width: 50%; 
-    float: right;
+  display: flex;
+  height: 100%; 
+  width: 50%; 
+  float: right;
 }
 
 .texto-home {
-    color: var(--cor-branco); 
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    height: 100vh;
-    width: 50%;
-    float: left; 
-    box-sizing: border-box; 
-    padding: 20px; 
-    text-align: center; 
-  }
+  color: var(--cor-branco); 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+  float: left; 
+  box-sizing: border-box; 
+  padding: 20px; 
+  text-align: center; 
+}
   
-  .texto-home h1{
-    font-family: 'Dancing Script', cursive;
-    margin: 10px 0; 
-    font-size: 60px;
-  }
-  .texto-home p {
+.texto-home h1{
+  font-family: 'Dancing Script', cursive;
+  margin: 10px 0; 
+  font-size: 60px;
+}
+.texto-home p {
+  margin: 10px 0; 
+}
 
-    margin: 10px 0; 
-  }
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--cor-branco);
+  color: var(--cor-prata);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+  
+ 
+.button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  color: var(--cor-dourada);
+  border-color: var(--cor-dourada);
+}
 
-  .botao-azul {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff; 
-    background-color: var(--cor-azul); 
-    border: 2px solid var(--cor-prata); 
-    border-radius: 5px; 
-    text-decoration: none; 
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; 
-  }
-  
-  .botao-azul:hover {
-    background-color: #fff; 
-    color: var(--cor-azul); 
-  }
-  
+/*SOBRE*/
+#sobre{
+  height: 100vh;
+  width: 100vw;
+}
+.sobre-mim {
+  padding: 20px;
+  text-align: justify;
+  background-color: var(--cor-dourada); 
+  color: var(--cor-preto);
+}
+
+.sobre-mim p {
+  margin-bottom: 15px;
+}
+
+.sobre-mim h2 {
+  color: var(--cor-preto);
+  border-bottom: 2px solid var(--cor-cinzaescuro); 
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.sobre-mim a:hover {
+  text-decoration: underline;
+}
