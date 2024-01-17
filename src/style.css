@@ -59,15 +59,9 @@ body{
 #home{
   width: 100vw;
   height: 100vh;
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, var(--cor-preto) 50%, var(--cor-prata) 100%);
-}
-
-.img-home {
-  display: flex;
-  height: 100%; 
-  width: 50%; 
-  float: right;
+  background-image: url(media/imagempronta.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .texto-home {
@@ -96,11 +90,12 @@ body{
 .button {
   display: inline-block;
   padding: 10px 20px;
+  margin: 20px;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
   border: 2px solid var(--cor-branco);
-  color: var(--cor-prata);
+  color: var(--cor-branco);
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out;
@@ -108,7 +103,7 @@ body{
   
  
 .button:hover {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px var(--cor-dourada);
   color: var(--cor-dourada);
   border-color: var(--cor-dourada);
 }
