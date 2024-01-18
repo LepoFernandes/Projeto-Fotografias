@@ -117,12 +117,23 @@ body{
   width: 100vw;
 }
 .sobre-mim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   padding: 20px;
   text-align: justify;
-  background-color: var(--cor-dourada); 
+  background: -webkit-linear-gradient(to to top, #9b8b6a, var(--cor-dourada)); 
+  background: linear-gradient(to top, #9b8b6a, var(--cor-dourada)); 
+
   color: var(--cor-preto);
 }
 
+.texto{
+  width: 50%;
+  height: 80%;
+  padding: 15px;
+}
 .sobre-mim p {
   margin-bottom: 15px;
 }
@@ -136,4 +147,9 @@ body{
 
 .sobre-mim a:hover {
   text-decoration: underline;
+}
+
+.imagem-sobre{
+  width: 50%;
+  height: 50%;
 }
