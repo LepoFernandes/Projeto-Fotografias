@@ -45,7 +45,7 @@ body{
 
 .menu-itens a {
   text-decoration: none;
-  color: var(--cor-dourada); 
+  color: var(--cor-branco); 
   font-weight: bold;
   padding: 10px;
   border: 2px solid transparent; 
@@ -97,8 +97,8 @@ body{
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  border: 2px solid var(--cor-branco);
-  color: var(--cor-branco);
+  border: 2px solid var(--cor-dourada);
+  color: var(--cor-dourada);
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out;
