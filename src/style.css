@@ -123,30 +123,57 @@ body{
   flex-direction: row;
   padding: 20px;
   text-align: justify;
-  background: -webkit-linear-gradient(to to top, #9b8b6a, var(--cor-dourada)); 
-  background: linear-gradient(to top, #9b8b6a, var(--cor-dourada)); 
-
+  background: -webkit-linear-gradient(to to top, var(--cor-cinza), var(--cor-cinzaescuro)); 
+  background: linear-gradient(to top, var(--cor-cinza), var(--cor-cinzaescuro)); 
   color: var(--cor-preto);
 }
 
-.texto{
-  width: 50%;
-  height: 80%;
-  padding: 15px;
-}
-.sobre-mim p {
-  margin-bottom: 15px;
+#timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
 }
 
-.sobre-mim h2 {
+.year {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.year:hover {
+  transform: scale(1.05); 
+}
+
+#year-1 {
+  background-color: var(--cor-branco);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-dourada);
+  font-family: 'Arial', sans-serif; 
+  transition: all 0.3s ease-in-out; 
+}
+
+#year-1:hover {
+  background-color: var(--cor-dourada); 
   color: var(--cor-preto);
-  border-bottom: 2px solid var(--cor-cinzaescuro); 
-  padding-bottom: 5px;
-  margin-bottom: 20px;
 }
 
-.sobre-mim a:hover {
-  text-decoration: underline;
+#year-1 h2 {
+  font-size: 28px; 
+  margin-bottom: 10px;
+}
+
+#year-1 p {
+  font-size: 18px; 
+  text-align: center;
 }
 
 .imagem-sobre{
