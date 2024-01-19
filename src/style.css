@@ -18,6 +18,8 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  margin: 0;
+  height: 100%;
 }
 ::-webkit-scrollbar {
   width: 0;
@@ -28,7 +30,6 @@ body{
   padding: 20px;
   width: 100%;
   top: 0;
-  position: fixed;
   z-index: 1000;
   background-color: #15151579;
 }
@@ -75,7 +76,6 @@ body{
   align-items: center;
   height: 100vh;
   width: 50%;
-  float: left; 
   box-sizing: border-box; 
   padding: 20px; 
   text-align: center; 
@@ -93,7 +93,7 @@ body{
 .button {
   display: inline-block;
   padding: 10px 20px;
-  margin: 20px;
+  margin: 10px;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -123,60 +123,28 @@ body{
   flex-direction: row;
   padding: 20px;
   text-align: justify;
- background-image: url(media/background.png);
- background-size: cover;
- background-attachment: fixed;
+  background-image: url(media/background.png);
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--cor-preto);
+  width: 100%;
+  border-top: 5px solid var(--cor-cinza);
 }
 
-#timeline {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 50px;
-}
-
-.year {
+.about-text {
   padding: 20px;
-  margin: 10px;
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
+  background-color: #73737367;
+  padding: 10px;
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--cor-branco);
+  font-size: 16px; 
+  line-height: 1.6; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
 }
-
-.year:hover {
-  transform: scale(1.05); 
-}
-
-#year-1 {
-  background-color: var(--cor-branco);
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--cor-dourada);
-  font-family: 'Arial', sans-serif; 
-  transition: all 0.3s ease-in-out; 
-}
-
-#year-1:hover {
-  background-color: var(--cor-dourada); 
-  color: var(--cor-preto);
-}
-
-#year-1 h2 {
-  font-size: 28px; 
-  margin-bottom: 10px;
-  color: var(--cor-cinzaescuro);
-}
-
-#year-1 p {
-  font-size: 18px; 
-  text-align: center;
-  color: var(--cor-preto);
+.paragrafo{
+  border-top: 1px solid var(--cor-preto);
 }
 
 .imagem-sobre{
