@@ -4,21 +4,20 @@ document.addEventListener("DOMContentLoaded", function () {
   
     function showGallery(categoryId) {
       categories.forEach(function (category) {
-        category.style.display = "none";
+        if (categoryId === "all" || category.id === categoryId) {
+          category.style.display = "flex";
+        } else {
+          category.style.display = "none";
+        }
       });
-  
-      const selectedCategory = document.getElementById(categoryId);
-      if (selectedCategory) {
-        selectedCategory.style.display = "flex";
-      }
     }
   
-    categoryButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        const categoryId = button.getAttribute("data-category");
+    categoryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const categoryId = button.dataset.category;
   
         // Remover a classe 'active' de todos os botões
-        categoryButtons.forEach(function (btn) {
+        categoryButtons.forEach((btn) => {
           btn.classList.remove("active");
         });
   
@@ -33,3 +32,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Exibir a galeria "Todas" por padrão
     showGallery("all");
   });
+  
