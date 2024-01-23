@@ -300,6 +300,12 @@ body{
 /*RESPONSIVO*/
 
 @media (max-width: 768px) {
+  #home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('media/imagem-mobile.png');
+    background-size: cover;
+    
+  }
+
   .texto-home {
     width: 100%;
     padding: 20px;
