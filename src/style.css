@@ -296,3 +296,117 @@ body{
 #rodape a:hover {
   text-decoration: underline;
 }
+
+/*RESPONSIVO*/
+
+@media (max-width: 768px) {
+  .texto-home {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .texto-home h1 {
+    font-size: 40px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .imagem-sobre {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sobre-mim {
+    flex-direction: column;
+  }
+
+  #trabalhos .category-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+/* Estilo para telas menores que 480px (smartphones) */
+@media (max-width: 768px) {
+  .texto-home {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .texto-home h1 {
+    font-size: 40px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .imagem-sobre {
+   width: 200px;
+   height: auto;
+  }
+
+  .principal-contato{
+    flex-direction: column;
+  }
+  .principal-contato > img{
+    width: 150px;
+    height: auto;
+  }
+
+  #trabalhos .category-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+/* Estilo para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+  .texto-home h1 {
+    font-size: 32px;
+  }
+
+  .texto-home p,
+  .about-text,
+  .paragrafo {
+    font-size: 14px;
+  }
+
+  .imagem-sobre {
+    display: none;
+  }
+
+  .gallery-img,
+  #trabalhos .category-button {
+    margin-bottom: 10px;
+  }
+
+  #contato {
+    padding: 30px 10px;
+    
+  }
+  .principal-contato{
+    flex-direction: column;
+  }
+  .principal-contato > img{
+    width: 150px;
+    height: auto;
+  }
+  .texto h2 {
+    font-size: 28px;
+  }
+
+  .texto p,
+  .redes-sociais {
+    margin: 15px;
+  }
+
+  .icone-redes {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+
+ 
+}
